@@ -13,6 +13,7 @@
 
 package estudos;
 
+import estudos.interfaces.awt.EstudoAwt;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -33,6 +34,8 @@ public class Menu {
         menu.append("5. Strings").append("\n");
         menu.append("6. Run time").append("\n");
         menu.append("7. Swing").append("\n");
+        menu.append("8. Awt").append("\n");
+        menu.append("9. Awt Panel").append("\n");
         
         System.out.println(menu);
         acao = leitor.nextInt();
@@ -69,6 +72,10 @@ public class Menu {
                 break;
             case 7:
                 EstudoSwing.ler();
+                break;
+            case 8:
+                EstudoAwt.showFrame();
+            case 9:
                 break;
         }
     }
